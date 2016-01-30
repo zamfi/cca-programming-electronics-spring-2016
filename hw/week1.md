@@ -1,4 +1,4 @@
-### Homework 1 (due Friday, January, 2015)
+### Homework 1 (due Friday, January 29, 2016)
 
 - Solve the puzzles up to and including level 8 at [Rudy the Red Dot](http://rudy.zamfi.net). Half of are the puzzles we solved together using "pseudocode" in class, but now you will solve them with actual code, in JavaScript. The other half are similar puzzles, with slightly greater complexity, that we did *not* solve together in class.
   
