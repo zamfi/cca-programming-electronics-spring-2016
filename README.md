@@ -4,7 +4,7 @@ This course repository contains homework assignments, useful guides, and code fo
 
 Also included in this repository is the official [course syllabus](syllabus.pdf).
 
-### Week 1: Wednesday, September 2, 2015
+### Week 1: Monday, January 25, 2016
 
 Lecture:
 - Inspirational Videos
