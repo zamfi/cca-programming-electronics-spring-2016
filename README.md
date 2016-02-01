@@ -57,7 +57,7 @@ Lecture:
 - Homework Review
 
 Lab:
-- Sketching with Processing.
+#### Sketching with Processing.
 
 1.  Rewrite the following code without using a loop:
 
@@ -131,7 +131,7 @@ Lab:
     }
     ```
 
-- Recreate the following sketches using Processing:
+#### Recreating Sketches
 
 1. ![one](img/one.png)
 
