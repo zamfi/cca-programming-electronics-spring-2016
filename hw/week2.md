@@ -103,7 +103,7 @@ Without further ado, here are the sketches:
 
    [![bouncing-balls](img/hw2/bouncing-balls.png)](http://youtu.be/7sfC4-4VoM4)
 
-14. **Challenge:** Bouncing balls, more added by clicking. You may need to use an `ArrayList`.
+14. **Challenge:** Bouncing balls, more added by clicking. You may need to use an `Array` or two.
 
    [![bouncing-balls-with-clicks](img/hw2/bouncing-balls-with-clicks.png)](http://youtu.be/Tnkhya3Tqu0)
 
