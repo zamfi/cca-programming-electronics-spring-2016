@@ -2,7 +2,7 @@
 
 **This homework has two parts:** programming practice due **Friday**, and a required tutorial to be completed **before Sunday night**.
 
-#### Array Tutorial
+#### Array Tutorial (due Sunday)
 
 Follow the [Processing Arrays tutorial](https://processing.org/tutorials/arrays/). Email me answers to the following questions to [jzamfirescupereira@cca.edu](mailto:jzamfirescupereira@cca.edu) by **Sunday night**.
   1. When is an array useful? (Answer in 3-4 sentences, please!)
@@ -32,7 +32,7 @@ Follow the [Processing Arrays tutorial](https://processing.org/tutorials/arrays/
     What is the value of `data1[3]`?
     
 
-#### Programming Practice
+#### Programming Practice (due Friday)
 
 - **Assignment: Take a look at and run [this Triangle code](triangles.pde). Replace the repeating blocks of code with a loop, like exercise #2 we did in class.** Create a new [GitHub repository](../github-guide.md#to-create-a-new-repository) called `week-2` for this week's homework, and put your code into a new file called `triangles.pde`.
 
