@@ -16,25 +16,25 @@ Remember, it is possible to know what everything in your code does. Every comman
 
   - **Assignment**: Recreate the following five sketches:
   
-  1. A grid of crosses.
-  
-    ![plus grid](img/hw3/plus_grid.png)
-  
-  2. A grid of colored squares.
-  
-    ![square grid](img/hw3/square_grid.png)
-  
-  3. An incomplete grid of squares. Missing squares are in [random](https://processing.org/reference/random_.html) positions.
-  
-    ![square grid incomplete](img/hw3/square_grid_incomplete.png)
-  
-  4. An animated, incomplete grid of crosses.
-  
-    [![plus grid animated](img/hw3/plus_grid_animated.png)](https://youtu.be/rmJYfu0DesQ)
-  
-  5. An animated, grid-of-crosses spotlight that [tracks](https://processing.org/reference/mouseX.html) the [mouse](https://processing.org/reference/mouseY.html).
-  
-    [![plus grid mouselight](img/hw3/plus_grid_mouselight.png)](https://youtu.be/6xtiqVWHpH4)
+    1. A grid of crosses.
+
+      ![plus grid](img/hw3/plus_grid.png)
+
+    2. A grid of colored squares.
+
+      ![square grid](img/hw3/square_grid.png)
+
+    3. An incomplete grid of squares. Missing squares are in [random](https://processing.org/reference/random_.html) positions.
+
+      ![square grid incomplete](img/hw3/square_grid_incomplete.png)
+
+    4. An animated, incomplete grid of crosses.
+
+      [![plus grid animated](img/hw3/plus_grid_animated.png)](https://youtu.be/rmJYfu0DesQ)
+
+    5. An animated, grid-of-crosses spotlight that [tracks](https://processing.org/reference/mouseX.html) the [mouse](https://processing.org/reference/mouseY.html).
+
+      [![plus grid mouselight](img/hw3/plus_grid_mouselight.png)](https://youtu.be/6xtiqVWHpH4)
 
   - **Assignment**: Pick two additional sketches from [last week's list of 15](week2.md) and create them in Processing. Put each in a separate file.
   
@@ -70,4 +70,4 @@ Remember, it is possible to know what everything in your code does. Every comman
     }
     ```
     
-    **Assignment**: Modify the code so that it draws a single continuous line connecting each circle, instead of drawing individual circles. Bonus points if the line fades to black as it trails away from the mouse.
+    **Assignment**: Modify the code above so that it draws a single continuous line connecting each circle, instead of drawing individual circles. Bonus points if the line fades to black as it trails away from the mouse!
