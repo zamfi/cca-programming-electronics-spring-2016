@@ -146,3 +146,13 @@ Lab:
 6. Look through the [Processing reference](http://processing.org/reference). Pick a function, and use it in a new sketch of your own choosing.
 
 [Homework for Week 2](hw/week2.md)
+
+### Week 3: Monday, February 8, 2016
+
+Lecture:
+- Homework Review
+
+Lab:
+- Deep dive on loops, including variables and conditions.
+
+[Homework for Week 3](hw/week3.md)
