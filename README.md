@@ -165,6 +165,7 @@ Lab:
    - Code Tracing Exercise [PDF](code-tracing.pdf)
    - Debugging with println!
      -  Practice One. What's the last value of `i` here? Calculate it manually, then confirm with a `println`.
+        
         ```processing
         int i = 7;
         while (i < 95) {
@@ -173,6 +174,7 @@ Lab:
         }
         ```
      -  Practice Two. What's the last value of `j` here? `counter`? How many `rect`s get drawn? Calculate manually, then confirm with `println`.
+        
         ```processing
         int i = 5;
         int j = 10;
