@@ -164,28 +164,28 @@ Lab:
 2. Evaluating Code.
    - Code Tracing Exercise [PDF](code-tracing.pdf)
    - Debugging with println!
-     - Buggy One. Should draw a grid of circles. Doesn't.
-       ```processing
-       void setup() {
-         size(200, 200);
-         background(255);
-         frameRate(2);
-       }
+     -  Buggy One. Should draw a grid of circles. Doesn't.
+        ```processing
+        void setup() {
+          size(200, 200);
+          background(255);
+          frameRate(2);
+        }
 
-       int x = 20;
-       int y = 20;
+        int x = 20;
+        int y = 20;
 
-       void draw() {
-         background(255);
-         while (x < width) {
-           while (y < height) {
-             ellipse(x, y, 15, 15);
-             y += 20;
-           }
-           x += 20;
-         }
-       }
-       ```
+        void draw() {
+          background(255);
+          while (x < width) {
+            while (y < height) {
+              ellipse(x, y, 15, 15);
+              y += 20;
+            }
+            x += 20;
+          }
+        }
+        ```
        
      - Buggy Two. Should bounce an ellipse around the screen. Doesn't.
        ```processing
