@@ -156,3 +156,78 @@ Lab:
 - Deep dive on loops, including variables and conditions.
 
 [Homework for Week 3](hw/week3.md)
+
+### Week 4: Monday, February 15, 2016
+
+1. Homework Review
+
+2. Evaluating Code.
+   - Code Tracing Exercise [PDF](code-tracing.pdf)
+   - Debugging with println!
+     - Buggy One. Should draw a grid of circles. Doesn't.
+       ```processing
+       void setup() {
+         size(200, 200);
+         background(255);
+         frameRate(2);
+       }
+
+       int x = 20;
+       int y = 20;
+
+       void draw() {
+         background(255);
+         while (x < width) {
+           while (y < height) {
+             ellipse(x, y, 15, 15);
+             y += 20;
+           }
+           x += 20;
+         }
+       }
+       ```
+       
+     - Buggy Two. Should bounce an ellipse around the screen. Doesn't.
+       ```processing
+       float radius = 5;
+
+       // ellipse position
+       float x1 = 30;
+       float y1 = 40;
+
+       // ellipse velocity
+       float vx1 = 1.7;
+       float vy1 = -1;
+
+       void setup() {
+         size(200, 200);
+         background(255);
+       }
+
+       void draw() {
+         background(255);
+  
+         // switch velocity direction if it's out of bounds
+         if (x1 < radius) {
+           vx1 = abs(vx1);
+         }
+         if (x1 > width-radius) {
+           vx1 = -abs(vx1);
+         }
+         if (y1 < radius) {
+           vy1 = abs(vy1);
+         }
+         if (y1 > height-radius) {
+           vy1 = abs(vy1);
+         }
+  
+         // update position
+         x1 += vx1;
+         y1 += vy1;
+  
+         // draw the ellipse itself
+         ellipse(x1, y1, radius*2, radius*2);
+       }
+       ```
+
+3. Arrays
