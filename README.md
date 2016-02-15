@@ -164,6 +164,30 @@ Lab:
 2. Evaluating Code.
    - Code Tracing Exercise [PDF](code-tracing.pdf)
    - Debugging with println!
+     -  Practice One. What's the last value of `i` here? Calculate it manually, then confirm with a `println`.
+        ```processing
+        int i = 7;
+        while (i < 95) {
+          line(i, random(height), i, random(height));
+          i = i + 7;
+        }
+        ```
+     -  Practice Two. What's the last value of `j` here? `counter`? How many `rect`s get drawn? Calculate manually, then confirm with `println`.
+        ```processing
+        int i = 5;
+        int j = 10;
+        int counter = 0;
+        while (i < 97) {
+          j = 10;
+          while (j < 97) {
+            rect(5+i/2, 5+j/2, 3, 3);
+            counter = counter + 1;
+
+            j = j + 10;
+          }
+          i = i + 5;
+        }
+        ```
      -  Buggy One. Should draw a grid of circles. Doesn't.
         ```processing
         size(400, 400);
