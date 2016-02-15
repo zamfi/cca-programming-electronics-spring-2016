@@ -166,24 +166,21 @@ Lab:
    - Debugging with println!
      -  Buggy One. Should draw a grid of circles. Doesn't.
         ```processing
-        void setup() {
-          size(200, 200);
-          background(255);
-          frameRate(2);
-        }
+        size(400, 400);
+        background(255);
 
-        int x = 20;
-        int y = 20;
+        int i = 0;
+        int j = 0;
 
-        void draw() {
-          background(255);
-          while (x < width) {
-            while (y < height) {
-              ellipse(x, y, 15, 15);
-              y += 20;
-            }
-            x += 20;
+        while (i < 24) {
+          j = 0;
+          while (j < 24) {
+            int x = 20 + i*15;
+            int y = 20 + i*15;
+            ellipse(x, y, 10, 10);
+            j++;
           }
+          i++;
         }
         ```
        
