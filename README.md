@@ -254,3 +254,5 @@ Lab:
         ```
 
 3. Arrays
+
+[Homework for Week 4](hw/week4.md)
