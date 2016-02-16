@@ -9,7 +9,7 @@
    4. Tally (or draw a line or dot) to the left of each line as you evaluate it. (Some lines will be evaluated many times!)
    5. Scan & email the printed exercise sheet to [me](mailto:jzamfirescupereira@cca.edu) and bring the original with you to class.
 
-2. Create a new [GitHub repository](../github-guide.md) called `week4` for this week's assignment.
+2. Create a new [GitHub repository](../github-guide.md) called `week4` for this week's assignment. You should have 4 files in that repository, one for each of the following 4 assignments:
 
    1. **Assignment**: *Debugging practice.* Consider the following code:
       ```processing
@@ -147,7 +147,7 @@
       
       Use `println` to answer the following questions:
       1. What's the highest value you observe for variable `realIndex`? Lowest?
-      2. In 10 seconds, how often is the variable `index` reset to 0?
+      2. In 10 seconds, how often is the variable `index` reset to 0? Consider using the [millis](http://processing.org/reference/millis_.html) function to help you with timing.
       
       Save your modified code with all printlns and answers to the questions above in a `// comment` to a file called `flappy.pde` in your homework repository.
       
