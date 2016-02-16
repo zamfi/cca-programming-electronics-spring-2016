@@ -163,7 +163,7 @@ Lab:
 
 2. Evaluating Code.
    - Code Tracing Exercise [PDF](code-tracing.pdf)
-   - Debugging with println!
+   - Debugging with `println`!
      -  Practice One. What's the last value of `i` here? Calculate it manually, then confirm with a `println`.
         
         ```processing
@@ -173,7 +173,7 @@ Lab:
           i = i + 7;
         }
         ```
-     -  Practice Two. What's the last value of `j` here? `counter`? How many `rect`s get drawn? Calculate manually, then confirm with `println`.
+     -  Practice Two. What's the last value of `j` here? `counter`? How many times does a `rect` get drawn? Calculate manually, then confirm with `println`.
         
         ```processing
         int i = 5;
