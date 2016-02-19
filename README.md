@@ -163,6 +163,7 @@ Lab:
 
 2. Evaluating Code.
    - Code Tracing Exercise [PDF](code-tracing.pdf)
+   - Learning about Program Evaluation - [PDF of slides](program-evaluation.pdf)
    - Debugging with `println`!
      -  Practice One. What's the last value of `i` here? Calculate it manually, then confirm with a `println`.
         
