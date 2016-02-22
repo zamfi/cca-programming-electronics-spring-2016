@@ -257,3 +257,23 @@ Lab:
 3. Arrays
 
 [Homework for Week 4](hw/week4.md)
+
+### Week 5: Monday, February 22, 2016
+
+1. Homework Review
+
+2. Flappy Bird!
+   
+   The code for [flappy.pde](hw/flappy.pde) in [homework 4](hw/week4.pde) takes random lines of random height and sends them towards the left edge of the screen. This is *almost* the mobile phone game [Flappy Bird](https://www.youtube.com/watch?v=fQoJZuBwrkU)!
+   
+   What's missing? At least a few things. In today's class, your assignment will be to build up Flappy Bird (or something like it) starting from the base code at [flappy.pde](hw/flappy.pde).
+   
+   Do the following:
+   
+   -  Lines only go up from the bottom — there’s no corresponding line from top as well. Add one!
+   -  Add the actual bird! Start with an ellipse, but ideally it’s something nice-looking?
+   -  Make the actual bird move with the keyboard. Check out the keyPressed variable.
+   -  Slow everything down.
+   -  Detect collisions with the walls.
+   -  Space out the walls more, so you can be guaranteed to go from wall opening to wall opening.
+   -  Make everything pretty!
