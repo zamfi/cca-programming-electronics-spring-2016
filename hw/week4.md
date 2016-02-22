@@ -32,7 +32,7 @@
         fill(255);
         for (int i = 0; i < GRID_SIZE; ++i) {
           for (int j = 0; j < GRID_SIZE; ++j) {
-            float distance = sqrt(pow(mouseX-gridToCoordinates(i), 2) + pow(mouseY-gridToCoordinates(j), 2));
+            float distance = sqrt(sq(mouseX-gridToCoordinates(i)) + sq(mouseY-gridToCoordinates(j)));
             float ellipseSize = min(100, 1000.0/distance);
             ellipse(gridToCoordinates(i), gridToCoordinates(j), ellipseSize, ellipseSize);
           }
@@ -88,8 +88,8 @@
             } else {
               line(x[i] + (count[i] - 15)*10, i, x[i] + 150, i);
             }
+            count[i]++;
           }
-          count[i]++;
         }
   
         if (mousePressed) {
