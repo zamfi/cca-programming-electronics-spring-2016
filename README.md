@@ -271,9 +271,12 @@ Lab:
    Do the following:
    
    -  Lines only go up from the bottom — there’s no corresponding line from top as well. Add one!
-   -  Add the actual bird! Start with an ellipse, but ideally it’s something nice-looking?
-   -  Make the actual bird move with the keyboard. Check out the keyPressed variable.
+   -  Add the actual bird! Start with an `ellipse`, but ideally it ends up something nice-looking?
+   -  Make the actual bird move with the keyboard. Check out the `keyPressed` variable.
    -  Slow everything down.
    -  Detect collisions with the walls.
    -  Space out the walls more, so you can be guaranteed to go from wall opening to wall opening.
    -  Make everything pretty!
+  
+  
+[Homework for Week 5](hw/week5.md)
