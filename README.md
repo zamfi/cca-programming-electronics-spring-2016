@@ -280,3 +280,13 @@ Lab:
   
   
 [Homework for Week 5](hw/week5.md)
+
+### Week 6: Monday, February 29, 2016
+
+1. Homework Review: understanding Flappy Bird and Snake.
+
+2. Syntax Review: understanding the syntax of variables, loops, conditions, and functions.
+
+3. Breaking down a puzzle into steps you can implement. More on this in the homework!
+
+[Homework for Week 6](hw/week6.md)
