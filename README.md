@@ -290,3 +290,165 @@ Lab:
 3. Breaking down a puzzle into steps you can implement. More on this in the homework!
 
 [Homework for Week 6](hw/week6.md)
+
+### Week 7: Monday, March 7, 2016
+
+1. Homework Review: bouncing a circle across the canvas. We reviewed:
+   -  A single ball bouncing around the canvas:
+      ```processing
+      float x;
+      float y;
+      float radius;
+      float xSpeed;
+      float ySpeed;
+
+      void setup() {
+        size(500, 500);
+        background(255);
+  
+        radius = 10;
+  
+        x = width/2;
+        y = height/2;
+  
+        xSpeed = 3;
+        ySpeed = 4;
+      }
+
+      void draw() {
+        background(255);
+  
+        fill(255, 0, 0);
+        noStroke();
+        ellipse(x, y, radius*2, radius*2);
+  
+        x = x + xSpeed;
+        y = y + ySpeed;
+  
+        if (x - radius < 0 || x + radius > width) {
+          xSpeed = -xSpeed;
+        }
+        if (y - radius < 0 || y + radius > height) {
+          ySpeed = -ySpeed;
+        }
+      }
+      ```
+   -  A single ball, using a class called `Ball`:
+      ```processing
+      class Ball {
+        float x;
+        float y;
+        float radius;
+        float xSpeed;
+        float ySpeed;
+
+        void move() {
+          x = x + xSpeed;
+          y = y + ySpeed;
+        }
+
+        void display() {
+          fill(255, 0, 0);
+          noStroke();
+          ellipse(x, y, radius*2, radius*2);
+        }
+
+        void bounce() {
+          if (x - radius < 0 || x + radius > width) {
+            xSpeed = -xSpeed;
+          }
+          if (y - radius < 0 || y + radius > height) {
+            ySpeed = -ySpeed;
+          }
+        }
+      }
+
+      Ball b = new Ball();
+
+      void setup() {
+        size(500, 500);
+        background(255);
+
+        b.radius = 10;
+
+        b.x = width/2;
+        b.y = height/2;
+
+        b.xSpeed = 3;
+        b.ySpeed = 4;
+      }
+
+      void draw() {
+        background(255);
+
+        b.display();
+
+        b.move();
+
+        b.bounce();
+      }
+      ```
+      
+   -  A thousand balls, using a class and an array:
+      ```processing
+      class Ball {
+        float x;
+        float y;
+        float radius;
+        float xSpeed;
+        float ySpeed;
+
+        void move() {
+          x = x + xSpeed;
+          y = y + ySpeed;
+        }
+
+        void display() {
+          fill(255, 0, 0);
+          noStroke();
+          ellipse(x, y, radius*2, radius*2);
+        }
+
+        void bounce() {
+          if (x - radius < 0 || x + radius > width) {
+            xSpeed = -xSpeed;
+          }
+          if (y - radius < 0 || y + radius > height) {
+            ySpeed = -ySpeed;
+          }
+        }
+      }
+
+      Ball[] b = new Ball[1000];
+
+      void setup() {
+        size(500, 500);
+        background(255);
+
+        for (int i = 0; i < b.length; i = i+1) {
+          b[i] = new Ball();
+
+          b[i].radius = 10;
+
+          b[i].x = width/2;
+          b[i].y = height/2;
+
+          b[i].xSpeed = random(-3, 3);
+          b[i].ySpeed = random(-3, 3);
+        }
+      }
+
+      void draw() {
+        background(255);
+
+        for (int i = 0; i < b.length; i = i+1) {
+          b[i].display();
+          b[i].move();
+          b[i].bounce();
+        }
+      }
+      ```
+
+2. Arduino introduction! Here are the [presentation slides, in pdf](img/arduino-slides.pdf).
+
+[Homework for Week 7](hw/week7.md)
