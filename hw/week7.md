@@ -8,7 +8,7 @@ This assignment consists of an Arduino lab and a programming practice assignment
   
   You'll need extra parts for this lab: LEDs, wires, two light-dependent resistors (LDR), and two 10K resistors, all of which you can get from the Hybrid Lab. (If you can, do this assignment at the Hybrid Lab!)
   
-  **Upload your final code to [a GitHub repository called `week7`] and email a link to [jzamfirescupereira@cca.edu](mailto:jzamfirescupereira@cca.edu). Bring your breadboard with your completed project to Wednesday's class.**
+  **Upload your final code to [a GitHub repository called `week7`](../github-guide.md) and email a link to [jzamfirescupereira@cca.edu](mailto:jzamfirescupereira@cca.edu). Bring your breadboard with your completed project to Wednesday's class.**
 
 
 #### Programming Practice
