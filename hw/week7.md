@@ -14,7 +14,7 @@ This assignment consists of an Arduino lab, tutorial, and a programming practice
   
   Consider the circuit below.
     
-  ![two resistors in series](img/two-series-resistors.png)
+  ![two resistors in series](img/two-series-resistors-2.png)
   
   The two resistors are said to be connected "in series". That means that any charge particles flowing through the circuit first pass through one resistor (*R<sub>A</sub>*), and then the other resistor (*R<sub>B</sub>*).
   
