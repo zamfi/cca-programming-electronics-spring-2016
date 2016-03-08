@@ -28,7 +28,7 @@ This assignment consists of an Arduino lab, tutorial, and a programming practice
 
   For each resistor, *V = I ⨉ R*. So *V<sub>A</sub> = I ⨉ R<sub>A</sub>* and *V<sub>B</sub> = I ⨉ R<sub>B</sub>*.
   
-  **Question 3: Assume *R<sub>A</sub> = 10000 Ω* and *R<sub>B</sub> = 5000 Ω*. How much voltage is lost through resistor *R<sub>A</sub>*? And *R<sub>B</sub>*?
+  **Question 3: Assume *R<sub>A</sub> = 10000 Ω* and *R<sub>B</sub> = 5000 Ω*. How much voltage is lost through resistor *R<sub>A</sub>*? And *R<sub>B</sub>*?**
   
   *Note:* If you need to review your algebra, I recommend the [Khan Academy tutorials on the topic](https://www.khanacademy.org/math/algebra)!
 
