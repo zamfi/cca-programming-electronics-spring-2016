@@ -580,7 +580,7 @@ Lab:
 
           // update the "old" x,y coordinates for the next frame
           oldX = x;
-          oldY = y;
+          oldY = x;
         }  
 
         void draw() {
