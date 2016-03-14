@@ -452,3 +452,163 @@ Lab:
 2. Arduino introduction! Here are the [presentation slides, in pdf](img/arduino-slides.pdf).
 
 [Homework for Week 7](hw/week7.md)
+
+
+### Week 8: Monday, March 14, 2016
+
+Lecture:
+- Resistors and Voltage review.
+
+Lab:
+-   Start with example **AnalogInOutSerial** (File > Examples > Analog > AnalogInOutSerial). Here's a simplified version of that code:
+    ```arduino
+    const int analogInPin = A0;  // Analog input pin that the potentiometer is attached to
+    const int analogOutPin = 9; // Analog output pin that the LED is attached to
+
+    int sensorValue = 0;        // value read from the pot
+    int outputValue = 0;        // value output to the PWM (analog out)
+
+    void setup() {
+      // initialize serial communications at 9600 bps:
+      Serial.begin(9600);
+      pinMode(analogOutPin, OUTPUT);
+    }
+
+    void loop() {
+      // read the analog in value:
+      sensorValue = analogRead(analogInPin);            
+      // map it to the range of the analog out:
+      outputValue = map(sensorValue, 0, 1023, 0, 255);  
+      // change the analog out value:
+      analogWrite(analogOutPin, outputValue);           
+
+      // print the results to the serial monitor:
+      Serial.print("sensor = " );                       
+      Serial.print(sensorValue);      
+      Serial.print("\t output = ");      
+      Serial.println(outputValue);   
+
+      // wait 2 milliseconds before the next loop
+      // for the analog-to-digital converter to settle
+      // after the last reading:
+      delay(2);                     
+    }
+    ```
+    Make sure you understand what this code does. If not, ask! Here's a schematic of what your circuit should look like:
+    
+    ![potentiometer and LED on pin 9](img/pot-led-pin-9.png)
+    
+    If you're not 100% comfortable with schematics, here are some helpful resources:
+    - See [Make's guide to building a breadboard from a schematic](http://makezine.com/2012/04/02/going-from-schematic-to-breadboard/)
+    - Also see [Paul Spinrad's guide to reading schematics](http://makezine.com/2011/01/25/reading-circuit-diagrams/) and [Collin's video version](http://makezine.com/2011/11/15/collins-lab-schematics/)
+    
+    Open the serial monitor and see what numbers are printed when you rotate the potentiometer. What's the lowest number you see? Highest?
+    
+    1. Modify the code so that instead of changing the brightness of the LED, the Arduino turns on or off the LED (using `digitalWrite` instead of `analogWrite`) depending on whether `outputValue` is greater or less than `127`. (Hint: You'll need an `if` statement. What's the `if` statement's condition?)
+
+    2. Add 3 more LEDs (4 total) on pins 10, 11, and 12. (Create new variables for the pins they're connected to.) Here's a new schematic:
+       ![potentiometer and LEDs on pins 9, 10, 11, and 12](img/pot-led-pins-9-10-11-12.png)
+    
+    3. Add new `if` statements so that the 4 LEDs make a "level meter": as you turn the potentiometer from left to right, the LEDs turn on one by one until they're all on when you've turned the potentiometer all the way.
+    
+    4. Replace the potentiometer in this circuit with a light-dependent resistor (LDR) in a voltage divider circuit. Here's what you should have:
+    
+       ![LDR and LEDs on pins 9, 10, 11, and 12](img/ldr-led-pins-9-10-11-12.png)
+      
+       What happens when you cover the LDR?
+       
+       Open the serial monitor and see what numbers are printed when you cover and uncover the LDR. What's the lowest number you see? Highest?
+       
+    5. Grab a digital multimeter and use it to inspect the voltage between `GND` (ground) and the analog sensor pin. (Not sure how to do this? Grab Leah or me and ask!)
+    
+    6. *Show me your breadboard before moving on.*
+    
+    7. Replace your LDR with a button. Here's what you should have:
+    
+       ![Button and LEDs on pins 9, 10, 11, and 12](img/switch-led-pins-9-10-11-12.png)
+    
+       What happens?
+       
+       Open the serial monitor and see what numbers are printed when you push and release the button. What's the lowest number you see? Highest? Verify with a digital multimeter.
+       
+       Replace the `analogRead` function with `digitalRead`. What happens in the serial monitor now?
+
+-   Use Arduino and Procesing function to create a digital [Etch-a-Sketch](https://www.youtube.com/watch?v=CAGcFy6CYnM#t=120s). 
+    
+    1. Connect two potentiometers to analog pins `A0` and `A1`. Here's a schematic:
+    
+       ![two potentiometers](img/two-pots.png)
+    
+    2. Write an Arduino sketch, using the `Serial` library, that reads the two analog inputs (using `analogRead`) and prints those values to serial port, two per line, separated by commas. The outputs should look like this in the serial monitor:
+
+       ```
+       253,124
+       253,176
+       253,182
+       ...
+       ```
+    
+       You will likely need both `Serial.print` and `Serial.println`. The first number should correspond to the value from pin `A0`, and the second from pin `A1`.
+    
+    3.  Here's a Processing sketch that reads these pairs of numbers from the serial port, and then draws a line from the old coordinate to the new coordinate. But it has a bug! So it doesn't quite work. Fix the bug.
+    
+        ```processing
+        // Etch-a-Sketch
+
+        import processing.serial.*;
+
+        Serial port;
+        int oldX = -1;
+        int oldY = -1;
+        int x = -1;
+        int y = -1;
+
+        void setup() {
+          size(512, 512);
+          background(255);
+          // make a new Serial object using the last entry in the Serial.list() list.
+          port = new Serial(this, Serial.list()[Serial.list().length-1], 9600);
+          port.bufferUntil('\n');
+        }
+
+        void drawNextLine() {
+          if (oldX >= 0 && oldY >= 0 && (x != oldX || y != oldY)) {
+            // draw a line from the old x,y coordinates to the new x,y coordinates
+            stroke(0);
+            line(x, y, oldX, oldY);
+          }
+
+          // update the "old" x,y coordinates for the next frame
+          oldX = x;
+          oldY = y;
+        }  
+
+        void draw() {
+          drawNextLine();
+        }
+
+        void mouseClicked() {
+          background(255);
+        }
+
+        void serialEvent(Serial p) {
+          String s = p.readString();
+          int commaPosition = s.indexOf(",");
+          if (commaPosition > 0) {
+            x = int(s.substring(0, commaPosition)) / 2;
+            y = int(s.substring(commaPosition+1, s.length()-2)) / 2;
+          }
+        }
+        ```
+    
+    4. Replace the potentiometer on pin `A1` with a sensing resistor of your choice in a voltage divider -- you can use an LDR like in the previous example, or a force-sensitive resistor, or a thermistor, or... A digital multimeter may help in picking the right corresponding resistor.
+    
+    5. Modify the Processing code so that it draws a graph of the value of the second coordinate only (that is, the number that changes when you rotate the potentiometer that you've connected to pin `A1`).
+       
+       You'll need to modify the `drawNextLine` function so that it doesn't draw a line from `x`,`y` to `oldX`,`oldY` anymore. Instead, it will use a slowly-increasing `x` coordinate. Try these two changes:
+       
+       1. Create a new variable called `columnPosition` and use that instead of `x` in the `line` function. 
+       
+       2. Increase `columnPosition` a little bit on every frame.
+    
+    6. **Challenge**: Also graph the value of the first coordinate!
