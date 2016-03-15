@@ -22,7 +22,7 @@ This assignment consists of an Arduino lab, tutorial, and a programming practice
   
   This makes is easy to calculate the total current, *I = 5V / (R<sub>A</sub> + R<sub>B</sub>)*
 
-  **Question 1: Assume *R<sub>A</sub>* and *R<sub>B</sub>* both equal *10000 Ω*. What are the total resistance and total current in the circuit?**
+  **Question 1: Assume *R<sub>A</sub>* and *R<sub>B</sub>* are each equal to *10000 Ω*. What are the total resistance and total current in the circuit?**
   
   **Question 2: Assume *R<sub>A</sub> = 10000 Ω* and *R<sub>B</sub> = 5000 Ω*. What are the total resistance and total current in the circuit?**
 
