@@ -1,4 +1,4 @@
-### Homework 7 (due Sunday, March 20-27, 2016)
+### Homework 8 (due Sunday, March 20-27, 2016)
 
 0. If you haven't completed the in-class electronics activity **Lab 1: LED Level Meter**, complete it! Upload your final code to GitHub in your `week8` repository. Also take a picture of your breadboard and upload that too. For bonus points, complete **Lab 2: Etch-a-sketch** too.
 
