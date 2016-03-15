@@ -29,9 +29,9 @@
    
    For the last problem, draw wires showing where you would the components' legs to the breadboard.
    
-   Scan (or photograph with your cell phone) your completed practice quiz and email it to me at [jzamfirescupereira@cca.edu](mailto:jzamfirescupereira@cca.edu) (**not in github**) by **Sunday night, 11:59pm on March 27**.
+   Scan (or photograph with your cell phone) your completed practice quiz and email it to me at [jzamfirescupereira@cca.edu](mailto:jzamfirescupereira@cca.edu) (**don't put this in github**) by **Sunday night, 11:59pm on March 27**.
    
-2. Learn about motors and answer the following questions. Email your answers to me at [jzamfirescupereira@cca.edu](mailto:jzamfirescupereira@cca.edu) by **Sunday, March 27**.
+2. Learn about motors and answer the following questions. Upload your answers to the `README.md` file in your `week8` github repository by **Sunday, March 27**.
    
    1. What is the role of the permanent magnet in a motor?
    2. What is the role of the brushes in a DC motor?
