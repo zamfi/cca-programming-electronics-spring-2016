@@ -535,7 +535,7 @@ Open the serial monitor and see what numbers are printed when you rotate the pot
    Replace the `analogRead` function with `digitalRead`. What happens in the serial monitor now?
 
 #### Lab 2: Etch-a-Sketch
-Use Arduino and Procesing function to create a digital [Etch-a-Sketch](https://www.youtube.com/watch?v=CAGcFy6CYnM#t=120s). 
+Use Arduino and Procesing function to create a digital [Etch](https://www.youtube.com/watch?v=dD5VlE_flpU)-a-[Sketch](https://en.wikipedia.org/wiki/Etch_A_Sketch). 
 
 1. Connect two potentiometers to analog pins `A0` and `A1`. Here's a schematic:
 
