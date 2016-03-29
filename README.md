@@ -616,3 +616,47 @@ Use Arduino and Procesing function to create a digital [Etch](https://www.youtub
 6. **Challenge**: Also graph the value of the first coordinate!
 
 [Homework for Week 8](hw/week8.md)
+
+### Week 9: Monday, March 28, 2016
+
+Lecture:
+-  Practice Quiz review
+-  [Array exercise](#array-exercise)
+
+In class today, we did a brief exercise using an array for a relatively small sketch. Here's the code:
+
+```processing
+float[] columns = new float[100];
+
+void setup() {
+  size(1000, 200);
+
+  for (int i = 0; i < columns.length; i = i+1) {
+    columns[i] = random(0, height);
+  }
+  smooth();
+  frameRate(60);
+}
+
+void draw() {
+  background(255);
+  noStroke();
+  fill(0);
+
+  for (int i = 0; i < columns.length; i = i+1) {
+    ellipse(i*10, columns[i], 5, 5);
+    if (mousePressed) {
+      if (mouseX > i*10-5 && mouseX < i*10+5) {
+        columns[i] = mouseY;
+      } 
+    }
+  }
+}
+```
+
+If you'd like to deepen your understanding of arrays, or for bonus points, try making some of the following changes:
+
+1. Make the dots move upward a few pixels per frame.
+2. When the dots pass the top of the canvas, make them appear at the bottom, in a somewhat random fashion.
+3. Increase the number of dots so that there is one dot per pixel.
+4. *Challenge*: Fix the issue where moving the mouse really quickly skips columns. The `pmouseX` and `pmouseY` variables may help you track how much the mouse has moved since the previous frame -- look them up in the reference!
