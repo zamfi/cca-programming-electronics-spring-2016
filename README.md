@@ -621,7 +621,7 @@ Use Arduino and Procesing function to create a digital [Etch](https://www.youtub
 
 Lecture:
 -  Practice Quiz review
--  [Array exercise](#array-exercise)
+-  Array exercise
 
 In class today, we did a brief exercise using an array for a relatively small sketch. Here's the code:
 

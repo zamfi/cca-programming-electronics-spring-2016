@@ -24,4 +24,4 @@
 
     - [Email me](mailto:jzamfirescupereira@cca.edu) or [Leah](mailto:lmeyerholtz@cca.edu) if you're confused by anything, or arrange a meeting with a lab monitor or programming coach in the Hybrid Lab.
 
-5.  Get bonus points by making changes to [today's code](../README.md#array-exercise).
+5.  Get bonus points by making changes to [today's code](../README.md#week-9-monday-march-28-2016).
