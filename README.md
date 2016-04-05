@@ -660,3 +660,11 @@ If you'd like to deepen your understanding of arrays, or for bonus points, try m
 2. When the dots pass the top of the canvas, make them appear at the bottom, in a somewhat random fashion.
 3. Increase the number of dots so that there is one dot per pixel.
 4. *Challenge*: Fix the issue where moving the mouse really quickly skips columns. The `pmouseX` and `pmouseY` variables may help you track how much the mouse has moved since the previous frame -- look them up in the reference!
+
+[Homework for Week 9](hw/week9.md)
+
+### Week 10: Monday, April 4, 2016
+
+Quiz!
+
+[Homework for Week 10](hw/week10.md)
